@@ -8,7 +8,7 @@ cd daily-priority-brief-workflow
 
 Then review and customize:
 
-- `output/cron-job.json`
+- `output/scheduled-workflow.json`
 - `output/briefing-prompt.txt`
 
 After that, load the rendered job into your Agent Harness scheduler/runtime.

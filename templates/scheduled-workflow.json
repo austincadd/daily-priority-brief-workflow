@@ -1,0 +1,18 @@
+{
+  "name": "Daily Priority Brief",
+  "enabled": true,
+  "sessionTarget": "isolated",
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 9 * * *",
+    "tz": "America/New_York"
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "timeoutSeconds": 240,
+    "message": "You are a briefing filter. Do 2 web searches: (1) '{{SEARCH_QUERY_1}}' and (2) '{{SEARCH_QUERY_2}}'. Pick the 5 best items — only SHIPPED (usable now), PROVEN (real benchmarks), or STRUCTURAL (major funding/platform significance). Skip hype. Output:\n\n🧭 **Daily Priority Brief** — [date]\n• [item] — [why it matters + <link>]\n\nMax 5 items. 1 line each. No fluff."
+  },
+  "delivery": {
+    "mode": "none"
+  }
+}

@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const templatePath = path.join(root, 'templates', 'cron-job.json');
-const outPath = process.argv[2] || path.join(root, 'dist', 'cron-job.rendered.json');
+const templatePath = path.join(root, 'templates', 'scheduled-workflow.json');
+const outPath = process.argv[2] || path.join(root, 'dist', 'scheduled-workflow.rendered.json');
 
 const vars = {
   SEARCH_QUERY_1: process.env.SEARCH_QUERY_1 || 'AI model released launched today',

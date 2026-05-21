@@ -9,7 +9,7 @@ fi
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 mkdir -p "$TARGET_DIR"
-cp "$ROOT_DIR/templates/cron-job.json" "$TARGET_DIR/cron-job.json"
+cp "$ROOT_DIR/templates/scheduled-workflow.json" "$TARGET_DIR/scheduled-workflow.json"
 cp "$ROOT_DIR/templates/briefing-prompt.txt" "$TARGET_DIR/briefing-prompt.txt"
 
 echo "Installed workflow template into: $TARGET_DIR"

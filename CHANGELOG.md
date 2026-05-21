@@ -4,7 +4,7 @@
 
 ### Added
 - Initial reusable workflow packaging for a daily priority brief cron flow
-- Cron job template
+- Scheduled workflow template
 - Prompt template
 - Render/install/validate helper scripts
 - Public README, examples, and contributing guide

@@ -2,13 +2,14 @@
   "name": "daily-priority-brief-workflow",
   "version": "0.1.0",
   "private": false,
-  "description": "Reusable scheduled workflow package for a daily priority brief cron job.",
+  "description": "Reusable scheduled workflow package for a daily priority brief agent-harness job.",
   "license": "MIT",
   "scripts": {
     "validate": "bash ./scripts/validate-workflow.sh",
-    "render": "node ./scripts/render-template.js ./dist/cron-job.rendered.json"
+    "render": "node ./scripts/render-template.js ./dist/scheduled-workflow.rendered.json"
   },
   "engines": {
     "node": ">=18"
   }
 }
+

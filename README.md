@@ -1,10 +1,10 @@
 # daily-priority-brief-workflow
 
-A reusable **scheduled workflow package** for generating a daily priority/news-style briefing through an OpenClaw cron job.
+A reusable **scheduled workflow package** for generating a daily priority/news-style briefing through an Agent Harness scheduled job.
 
 This is a **workflow repo**, not a skill repo. It packages:
 
-- a reusable cron job template
+- a reusable scheduled-workflow template
 - configurable prompt text
 - install/setup helpers
 - documentation for scheduling and adaptation
@@ -18,8 +18,6 @@ Use this when you want an Agent Harness to automatically run a scheduled morning
 - formats a concise summary
 - optionally posts the result to a chat destination or keeps delivery internal
 
-The default packaged workflow is based on a daily AI briefing pattern, but the repo is structured so you can adapt it into a broader “daily priority brief” flow.
-
 ## Repository layout
 
 ```text
@@ -30,7 +28,7 @@ daily-priority-brief-workflow/
 ├── CONTRIBUTING.md
 ├── .gitignore
 ├── templates/
-│   ├── cron-job.json
+│   ├── scheduled-workflow.json
 │   └── briefing-prompt.txt
 ├── scripts/
 │   ├── install-workflow.sh
@@ -48,7 +46,7 @@ daily-priority-brief-workflow/
 
 ## What the packaged workflow does
 
-The default version runs once per day at **9:00 AM America/New_York** and asks OpenClaw to:
+The default version runs once per day at **9:00 AM America/New_York** and asks the Agent Harness to:
 
 1. run web research
 2. select the highest-signal items
@@ -58,9 +56,10 @@ The default version runs once per day at **9:00 AM America/New_York** and asks O
 
 ## Fastest setup
 
-1. Edit the variables in `templates/cron-job.json`
+1. Edit the variables in `templates/scheduled-workflow.json`
 2. Customize `templates/briefing-prompt.txt` if needed
 3. Install using the helper script
+4. Load the rendered payload into your Agent Harness scheduler
 
 ```bash
 ./scripts/install-workflow.sh /path/to/output
@@ -68,7 +67,9 @@ The default version runs once per day at **9:00 AM America/New_York** and asks O
 
 That writes a ready-to-use workflow payload into the target folder.
 
-## Cron job model
+The package is intentionally simple so it can be dropped into different Agent Harness setups with minimal adaptation.
+
+## Scheduled workflow model
 
 The packaged template uses:
 
@@ -108,20 +109,7 @@ Change:
 
 ## Notes
 
-This repo does **not** create the cron job directly through GitHub. It packages the workflow so it can be installed into OpenClaw or adapted by another operator.
-
-## License
-
-MIT
-e
-
-MIT
-r adapted by another operator.
-
-## License
-
-MIT
-enClaw or adapted by another operator.
+This repo does **not** create the scheduled job directly through GitHub. It packages the workflow so it can be installed into an Agent Harness or adapted by another operator.
 
 ## License
 
