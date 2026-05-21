@@ -1,0 +1,12 @@
+# Install example
+
+```bash
+git clone https://github.com/<your-user>/daily-priority-brief-workflow.git
+cd daily-priority-brief-workflow
+./scripts/install-workflow.sh ./output
+```
+
+Then review and customize:
+
+- `output/cron-job.json`
+- `output/briefing-prompt.txt`
