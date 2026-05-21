@@ -13,7 +13,7 @@ node scripts/render-template.js ./output/cron-job.json
 In `cron-job.json`, edit:
 
 - `delivery.mode` to `announce` or `webhook`
-- add destination details expected by your OpenClaw environment
+- add destination details expected by your Agent Harness environment
 
 ## Change timing
 Edit:

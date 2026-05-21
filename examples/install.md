@@ -10,3 +10,5 @@ Then review and customize:
 
 - `output/cron-job.json`
 - `output/briefing-prompt.txt`
+
+After that, load the rendered job into your Agent Harness scheduler/runtime.

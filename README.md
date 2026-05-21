@@ -11,7 +11,7 @@ This is a **workflow repo**, not a skill repo. It packages:
 
 ## What this is for
 
-Use this when you want OpenClaw to automatically run a scheduled morning briefing that:
+Use this when you want an Agent Harness to automatically run a scheduled morning briefing that:
 
 - performs web research
 - filters results by importance
@@ -109,6 +109,19 @@ Change:
 ## Notes
 
 This repo does **not** create the cron job directly through GitHub. It packages the workflow so it can be installed into OpenClaw or adapted by another operator.
+
+## License
+
+MIT
+e
+
+MIT
+r adapted by another operator.
+
+## License
+
+MIT
+enClaw or adapted by another operator.
 
 ## License
 
